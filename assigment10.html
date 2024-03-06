@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigment 10</title>
+    <title>Caculator</title>
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" type="image/x-icon">
 </head>
+
 <body>
-    
+    <script>
+        var num1 = +prompt('type first number')
+        var opration = prompt('Write Opration Like + - / * %')
+        var num2 = +prompt('type second number')
+        if (opration == '+') {
+            alert(num1 + num2)
+        }else if(opration == '-'){
+            alert(num1 - num2)
+        }else if(opration == '*'){
+            alert(num1 * num2)
+        }else if(opration == '/'){
+            alert(num1 / num2)
+        }else{
+            alert('please write clear ass suggest')
+        }
+    </script>
 </body>
+
 </html>

@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigment 9</title>
+    <title>Temprature Gusse</title>
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" type="image/x-icon">
 </head>
 <body>
-    
+    <script>
+        var userTempC = +prompt('Write Here Temprature In Centigrate')
+        if (userTempC >= 40) {
+            alert('It is too hot outside.')
+        }else if (userTempC >= 30){
+            alert('The Weather today is Normal')
+        }else if (userTempC >= 20){
+            alert('Today’s Weather is cool.')
+        }else if (userTempC >= 10) {
+            alert('OMG! Today’s weather is so Cool.')
+        }else if (userTempC < 10){
+            alert('Bahut Sardi He Bhai Nh ja Bhr')
+        }
+    </script>
 </body>
 </html>
