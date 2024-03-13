@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 6</title>
+</head>
+
+<body>
+    <script>
+        // Default value Of array
+
+        var colors = ['red', 'blue', 'green']
+        document.write('<h3>Here Is Orignal Array </h3>')
+        document.write(colors)
+
+        //array adding colour in start
+        var unshift = prompt('Enter A Colour Who Have Come on First color')
+        colors.unshift(unshift);
+
+        //array after adding a colour in start
+        document.write('<h3>Array After Adding 1 colour in start</h3>')
+        document.write(colors)
+
+        //array adding colour in end
+        var push = prompt('Enter A Colour Who Have Come on end color')
+        colors.push(push);
+
+        //array after adding a colour in start
+        document.write('<h3>Array After Adding 1 colour in start</h3>')
+        document.write(colors)
+
+        //adding two more colours in array
+        document.write('<h3>Array After Adding 2 colour in start</h3>')
+        colors.unshift('purple', 'green')
+        document.write(colors)
+
+        //deletting first colour from array
+        document.write('<h3>Array After deletting beginning color</h3>')
+        colors.shift()
+        document.write(colors)
+
+        //deletting last colour from array
+        document.write('<h3>Array After deletting end color</h3>')
+        colors.pop()
+        document.write(colors)
+
+        //desire position to add color
+        document.write('<h3>Array After Adding Desire Position Color</h3>')
+        var add_Index_Of_Color_User = prompt('Enter Index To Add Color On Index')
+        var add_Color_User = prompt('Enter Color Name To Add')
+        colors.splice(add_Index_Of_Color_User, 0, add_Color_User)
+        document.write(colors)
+
+        //desire position to add color
+        document.write('<h3>Array After deleting Desire Position Colors</h3>')
+        var del_Color_index = prompt('Enter Index To Dlt Color From')//dlt karo yaha se
+        var how_Many_Colors = prompt('How Many Colours You Want To Dlt')//itne color
+        colors.splice(del_Color_index, how_Many_Colors)
+        document.write(colors)
+
+
+    </script>
+</body>
+
+</html>
