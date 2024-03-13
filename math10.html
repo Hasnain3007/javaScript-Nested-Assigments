@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Expression 10</title>
+</head>
+<body>
+    <script>
+        var totalNum = 300
+        var englishMarks = +prompt('Enter Your English Marks')
+        var urduMarks = +prompt('Enter Your Urdu Marks')
+        var mathMarks = +prompt('Enter Your Math Marks')
+        document.write(`<h1>Total Marks is` + ' :' + totalNum)
+        document.write(`<h2>English : ${englishMarks}`)
+        document.write(`<h2>Urdu : ${urduMarks}`)
+        document.write(`<h2>Math : ${mathMarks}`)
+        var totalGetMarks = englishMarks + urduMarks + mathMarks
+
+        document.write(`<h2>Total Marks You Got :- ${totalGetMarks}<br>`)
+        document.write(`<h2>total percentage :- ${totalGetMarks/totalNum*100}%<br>`)
+        if (totalGetMarks >= 275) {
+            document.write('<h2  style="color: green;">Grade : A<sup>+</sup>')
+        }
+        else if (totalGetMarks >= 250)//|| totalGetMarks > 275)
+        {
+            document.write('<h2 style="color: green;">Grade : A')
+        }
+
+        else if (totalGetMarks >= 220)// || totalGetMarks > 250
+        {
+            document.write('<h2 style="color: yellow;">Grade : B')
+        }
+
+        else if (totalGetMarks >= 200)//|| totalGetMarks > 220)
+        {
+            document.write('<h2 style="color: orange;">Grade : C')
+        }
+
+        else if (totalGetMarks >= 180)//|| totalGetMarks > 200)
+        {
+            document.write('<h2 style="color: pink;">Grade : D')
+        }
+
+        else if (totalGetMarks >= 150)//|| totalGetMarks > 180)
+        {
+            document.write('<h2>Grade : E')
+        }
+
+        else if (totalGetMarks >= 0)//|| totalGetMarks > 150)
+        {
+            document.write('<h2 style="color: red;"> !Fail')
+        }
+
+
+        //var englishRemaining = 100 - englishMarks
+        //  var urduRemaining = 100 - urduhMarks
+        //    var mathRemaining = 100 - mathMarks
+        //      var totalRemainingMarks = englishRemaining + urduRemaining + mathRemaining
+
+        //        document.write(`<h2>Total Remaining Marks :-${totalRemainingMarks}`)
+
+    </script>
+</body>
+
+</html>

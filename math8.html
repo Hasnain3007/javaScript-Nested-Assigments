@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Expression 8</title>
+</head>
+
+<body>
+    <h1>The Lifetime Supply Calculator</h1>
+    <script>
+        var snack = prompt('Enter Your Favorite Snack')
+        var age = +prompt('Enter Your Current Age')
+        var estimatedAge = +prompt('Enter Your Estimated Maximum Age')
+        var snackPerDay = +prompt('Enter Your Amount Of Snack Per Day')
+        document.write(`Your Favorite Snack Is : ${snack}<br>`)
+        document.write(`Your Age Is : ${age}<br>`)
+        document.write(`Your Estimated Maximum Age Is : ${estimatedAge}<br>`)
+        totalSnack = snackPerDay*365*estimatedAge
+        document.write(`You Will Need ${totalSnack} ${snack} To Last You Until The Ripe Old Age Of ${estimatedAge}`)
+
+    </script>
+</body>
+
+</html>
